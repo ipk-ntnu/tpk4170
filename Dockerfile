@@ -14,4 +14,5 @@ USER main
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
     && jupyter nbextension enable --py --sys-prefix pythreejs
+    && jupyter nbextension enable --py --sys-prefix widgetsnbextension
     # && python -m octave_kernel.install
