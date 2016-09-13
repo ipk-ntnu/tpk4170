@@ -13,6 +13,6 @@ USER main
 # Install requirements for Python 2
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
-    && jupyter nbextension enable --py --sys-prefix pythreejs
-    && jupyter nbextension enable --py --sys-prefix widgetsnbextension
+RUN jupyter nbextension enable --py --sys-prefix pythreejs
+RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
     # && python -m octave_kernel.install
